@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+// import { useEffect } from "react";
 import Image from "next/image";
 
 const slides = [
@@ -35,15 +36,15 @@ export default function Slider() {
   // This state is for select the current image of the carousel
   const [current, setIsCurrent] = useState<number>(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIsCurrent((prevState) =>
-        prevState === slides.length - 1 ? 0 : prevState + 1
-      );
-    }, 3000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setIsCurrent((prevState) =>
+  //       prevState === slides.length - 1 ? 0 : prevState + 1
+  //     );
+  //   }, 3000);
 
-    return () => clearInterval(interval);
-  }, []);
+  //   return clearInterval(interval);
+  // }, []);
 
   return (
     <div className="h-[calc(100vh-80px)] overflow-hidden">
