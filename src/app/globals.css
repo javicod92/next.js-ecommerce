@@ -9,3 +9,16 @@
 .scrollbar-hide {
   scrollbar-width: none;
 }
+
+/* .scrollbar-hide::-webkit-scrollbar {
+  scrollbar-color: transparent transparent;
+}
+
+.scrollbar-hide {
+  scrollbar-color: transparent transparent;
+}
+
+.scrollbar-hide::-webkit-scrollbar:hover,
+.scrollbar-hide:hover {
+  scrollbar-color: #505050 transparent;
+} */

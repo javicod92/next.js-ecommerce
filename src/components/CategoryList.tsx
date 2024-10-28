@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function CategoryList() {
   return (
-    <div className="px-4 overflow-x-scroll scrollbar-hide">
+    <div className="px-4 overflow-x-scroll scrollbar-hide hover:scrollbar-show">
       <div className="flex gap-4 md:gap-8">
         <Link
           href="/list?cat=test"
